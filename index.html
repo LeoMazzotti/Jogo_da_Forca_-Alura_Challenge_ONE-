@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/img/logo.png" alt="Logo da Alura" />
+    </header>
+
+    <div class="dica">
+      <p>Dica: <span id="dicaPalavra"></span></p>
+    </div>
+
+    <div class="containerImage">
+      <img
+        id="morto"
+        class="image"
+        src="./assets/images/morto.png"
+        alt="Img fim"
+      />
+      <img
+        id="braco2"
+        class="image"
+        src="./assets/images/braco2.png"
+        alt="Img braço"
+      />
+      <img
+        id="braco1"
+        class="image"
+        src="./assets/images/braco1.png"
+        alt="Img braço"
+      />
+      <img
+        id="perna2"
+        class="image"
+        src="./assets/images/perna2.png"
+        alt="Img perna"
+      />
+      <img
+        id="perna1"
+        class="image"
+        src="./assets/images/perna1.png"
+        alt="Img perna"
+      />
+      <img
+        id="corpo1"
+        class="image"
+        src="./assets/images/corpo.png"
+        alt="Img tronco"
+      />
+      <img
+        id="cabeca"
+        class="image"
+        src="./assets/images/cabeca.png"
+        alt="Img cabeca"
+      />
+      <img
+        id="forca"
+        class="image"
+        src="./assets/images/forca.png"
+        alt="Img Forca"
+      />
+    </div>
+
+    <section class="containerLetras">
+      <div id="palavraSorteada0" class="letra"></div>
+      <div id="palavraSorteada1" class="letra"></div>
+      <div id="palavraSorteada2" class="letra"></div>
+      <div id="palavraSorteada3" class="letra"></div>
+      <div id="palavraSorteada4" class="letra"></div>
+      <div id="palavraSorteada5" class="letra"></div>
+      <div id="palavraSorteada6" class="letra"></div>
+      <div id="palavraSorteada7" class="letra"></div>
+      <div id="palavraSorteada8" class="letra"></div>
+      <div id="palavraSorteada9" class="letra"></div>
+    </section>
+
+    <section class="containerBase">
+      <div id="base0" class="base"></div>
+      <div id="base1" class="base"></div>
+      <div id="base2" class="base"></div>
+      <div id="base3" class="base"></div>
+      <div id="base4" class="base"></div>
+      <div id="base5" class="base"></div>
+      <div id="base6" class="base"></div>
+      <div id="base7" class="base"></div>
+      <div id="base8" class="base"></div>
+      <div id="base9" class="base"></div>
+    </section>
+
+    <div>
+      <p class="letrasErradasTitulo">Letras Erradas:</p>
+      <p id="letrasErradas" class="letrasErradas"></p>
+    </div>
+
+    <div class="aviso-palavra-repetida"></div>
+
+    <div id="info" class="info none">
+      <img src="./assets/img/info.png" alt="Logo informativo" />
+    </div>
+    
+    <nav class="popup-btn">
+      <button onclick="reiniciar()" class="reiniciar">Reiniciar</button>
+
+      <button
+        onclick="inserirNovaPalavra()"
+        id="inserir"
+        class="inserirPalavra"
+      >
+        Inserir Palavra
+      </button>
+
+      <a href="fim.html">
+        <button class="sair none">Sair</button>
+      </a>
+    </nav>
+
+      <div id="containerPopup">
+        <p id="popup"></p>
+        <p id="nomePalavraMsgPopup"></p>
+        <button onclick="reiniciar()" id="reiniciar2" class="reiniciar">
+          Reiniciar
+        </button>
+      </div>
+    </section>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
